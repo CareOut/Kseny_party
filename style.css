@@ -195,7 +195,7 @@ img {
   line-height: 20px;
   letter-spacing: 0.2em;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -251,7 +251,7 @@ img {
   position: absolute;
   right: -25px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
   .timer__item:not(:last-child)::after {
     right: -18px;
   }
@@ -279,8 +279,14 @@ img {
   line-height: 20px;
   letter-spacing: 0.2em;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .where__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .where__text span {
