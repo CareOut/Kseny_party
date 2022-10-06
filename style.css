@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/gilroy/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf);
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url(fonts/worksans/WorkSans-Regular.otf);
+}
+@font-face {
+  font-family: "Gilroy Italic";
+  src: url(fonts/gilroy/Gilroy-RegularItalic.ttf);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+/*.......................................HEADING..............................................................*/
+.heading {
+  background-color: #272727;
+  padding: 50px 30px 40px 30px;
+}
+
+.heading-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__date {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: #fcd54c;
+  margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .title__date {
+    font-size: 50px;
+    line-height: 64px;
+  }
+}
+
+.title__title {
+  max-width: 750px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  .title__title {
+    font-size: 50px;
+    line-height: 64px;
+  }
+}
+
+.heading__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.heading-list li {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+  list-style: disc;
+}
+
+.heading-list {
+  max-width: 350px;
+  text-align: center;
+}
+
+/*...........................................PHOTO.........................................................*/
+.photo {
+  width: 100%;
+  background-color: #272727;
+}
+
+.img__img {
+  width: 100%;
+}
+
+/*...........................................ABOUT........................................................*/
+.about {
+  width: 100%;
+  background-color: #272727;
+  padding: 70px 40px 40px 40px;
+}
+
+.about__text {
+  font-family: "Gilroy Italic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/*..............................................Timer......................................................*/
+.timer {
+  padding: 70px 40px 50px 40px;
+  background-color: #272727;
+}
+@media (max-width: 480px) {
+  .timer {
+    padding: 35px 15px 20px 15px;
+  }
+}
+
+.timer-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__items {
+  display: flex;
+  font-size: 96px;
+  color: #fcd54c;
+}
+@media (max-width: 1000px) {
+  .timer__items {
+    font-size: 72px;
+  }
+}
+
+.timer__item {
+  position: relative;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.timer__item:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -25px;
+}
+@media (max-width: 1000px) {
+  .timer__item:not(:last-child)::after {
+    right: -18px;
+  }
+}
+
+/*................................................WHERE...................................................*/
+.where {
+  width: 100%;
+  background-color: #272727;
+  padding: 40px;
+}
+
+.where-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.where__text {
+  font-family: "Gilroy Italic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.where__text span {
+  color: #fcd54c;
+}
+
+/*.................................................MAP....................................................*/
+.map {
+  padding: 40px;
+  background-color: #272727;
+}
+
+.map-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
