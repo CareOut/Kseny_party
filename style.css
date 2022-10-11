@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 button {
@@ -62,20 +62,8 @@ img {
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: url(fonts/gilroy/Gilroy-Regular.ttf);
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url(fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf);
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url(fonts/worksans/WorkSans-Regular.otf);
-}
-@font-face {
-  font-family: "Gilroy Italic";
-  src: url(fonts/gilroy/Gilroy-RegularItalic.ttf);
+  font-family: "AngilicaC";
+  src: url(fonts/AngelicaC/angelicac.otf);
 }
 .container {
   max-width: 1280px;
@@ -106,10 +94,10 @@ img {
 }
 
 .title__date {
-  font-family: "Space Grotesk";
+  font-family: "AngilicaC";
   font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
+  font-weight: 200;
+  font-size: 120px;
   line-height: 100px;
   text-transform: uppercase;
   color: #fcd54c;
@@ -117,16 +105,16 @@ img {
 }
 @media (max-width: 1000px) {
   .title__date {
-    font-size: 50px;
+    font-size: 96px;
     line-height: 64px;
   }
 }
 
 .title__title {
   max-width: 750px;
-  font-family: "Gilroy";
+  font-family: "AngilicaC";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 64px;
   line-height: 72px;
   text-transform: uppercase;
@@ -142,9 +130,9 @@ img {
 }
 
 .heading__text {
-  font-family: "Gilroy";
+  font-family: "AngilicaC";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -154,9 +142,9 @@ img {
 }
 
 .heading-list li {
-  font-family: "Gilroy";
+  font-family: "AngilicaC";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -178,6 +166,7 @@ img {
 
 .img__img {
   width: 100%;
+  opacity: 0.7;
 }
 
 /*...........................................ABOUT........................................................*/
@@ -188,9 +177,9 @@ img {
 }
 
 .about__text {
-  font-family: "Gilroy Italic";
+  font-family: "AngilicaC";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.2em;
@@ -272,9 +261,9 @@ img {
 }
 
 .where__text {
-  font-family: "Gilroy Italic";
+  font-family: "AngilicaC";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.2em;
